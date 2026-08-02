@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+source: registry searches (npm, PyPI, RubyGems) 2026-07-21
+notes: >-
+  Xapo Bank ships no current public API or SDKs. The packages below are
+  remnants of the pre-bank Xapo Bitcoin Wallet API era (~2015): the xapo_sdk
+  packages were published against the official github.com/xapo/python-sdk
+  repository, which has since been removed (the xapo GitHub org now has zero
+  public repos). All are legacy/unmaintained; the API they target has been
+  retired. passport-xapo is third-party (Bitrefill). xapo-component-library
+  on npm (2022) has no repository metadata and cannot be verified as
+  first-party. No first-party packages found on Maven Central, NuGet,
+  pkg.go.dev, Packagist, or crates.io searches.
+packages:
+- language: python
+  registry: pypi
+  name: xapo_sdk
+  url: https://pypi.org/project/xapo-sdk/
+  install: pip install xapo-sdk
+  version: 0.2.2
+  official: true
+  status: legacy
+  note: Xapo bitcoin sdk & tools; homepage was https://github.com/xapo/python-sdk (removed); API retired
+- language: ruby
+  registry: rubygems
+  name: xapo_sdk
+  url: https://rubygems.org/gems/xapo_sdk
+  install: gem install xapo_sdk
+  version: 0.2.2
+  official: true
+  status: legacy
+  note: Xapo bitcoin sdk & tools, same authorship as the PyPI package; API retired
+- language: javascript
+  registry: npm
+  name: passport-xapo
+  url: https://www.npmjs.com/package/passport-xapo
+  install: npm install passport-xapo
+  official: false
+  status: legacy
+  note: third-party Passport.js strategy for the retired Xapo credentials API (Bitrefill)
+- language: javascript
+  registry: npm
+  name: xapo-component-library
+  url: https://www.npmjs.com/package/xapo-component-library
+  install: npm install xapo-component-library
+  official: false
+  status: unverified
+  note: published 2022, no repository metadata; first-party status unverifiable

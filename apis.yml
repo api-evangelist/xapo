@@ -1,9 +1,30 @@
 aid: xapo
 name: Xapo
-description: 'Xapo is a company surfaced as a portfolio company of emergence-capital, greylock, pantera-capital,
-  ribbit-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Xapo Bank is a members-only private bank and Bitcoin custodian founded in
+  2013, combining regulated fiat banking with institutional-grade Bitcoin
+  custody in a single app. Members earn interest on Bitcoin and USD balances,
+  borrow against Bitcoin without selling, invest in US stocks and ETFs, and
+  transact globally in multiple currencies. Xapo Bank Limited is regulated by
+  the Gibraltar Financial Services Commission as a credit institution
+  (Permission No. 23171), with Xapo VASP Limited licensed as a DLT Provider
+  (Permission No. 26061). The company publishes SOC 2 Type II / SOC 3, PCI DSS,
+  and GDPR compliance claims but operates app-only today, with no public
+  developer API or portal; legacy Xapo Bitcoin API SDKs remain on PyPI and
+  RubyGems from its pre-bank wallet era.
 url: https://raw.githubusercontent.com/api-evangelist/xapo/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static-media-cdn.xapobank.com/images/default-og-image.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,14 +32,20 @@ x-backed-by:
 - greylock
 - pantera-capital
 - ribbit-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- Bitcoin
+- Banking
+- Custody
+- Payments
+- Wealth Management
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,5 +53,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/xapo-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/xapo-domain-security.yml
 - type: Website
-  url: https://www.xapo.com
+  url: https://www.xapobank.com/en
+- type: Support
+  url: https://www.xapobank.com/en/contact
+- type: HelpCenter
+  url: https://www.xapobank.com/en/help
+- type: Blog
+  url: https://www.xapobank.com/en/insider
+- type: BlogRSS
+  url: https://www.xapobank.com/feed.xml
+- type: Pricing
+  url: https://www.xapobank.com/en/membership
+- type: SignUp
+  url: https://application.xapobank.com/membership-application
+- type: TermsOfService
+  url: https://legal.xapobank.com/misc/website-terms-use
+- type: PrivacyPolicy
+  url: https://legal.xapobank.com/privacy/privacy-notice
+- type: GitHubOrganization
+  url: https://github.com/xapo
+- type: Security
+  url: https://legal.xapobank.com/misc/responsible-disclosure-policy
+- type: Compliance
+  url: https://www.xapobank.com/en/company/compliance
+- type: TrustCenter
+  url: security/xapo-trust-center.yml
+- type: Conformance
+  url: conformance/xapo-conformance.yml
+- type: WellKnown
+  url: well-known/xapo-well-known.yml
+- type: SecurityTxt
+  url: well-known/xapo-security.txt
+- type: Packages
+  url: packages/xapo-packages.yml
+- type: LLMsTxt
+  url: llms/xapo-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

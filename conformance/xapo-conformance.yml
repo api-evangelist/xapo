@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.xapobank.com/en/company/compliance
+notes: >-
+  Xapo Bank has no public developer API, so there is no machine-readable API
+  surface to derive protocol conformance from. Entries below capture the
+  compliance and regulatory claims the company itself publishes on its
+  compliance and security pages.
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: AICPA SOC 2 Type II certification badge on /en/company/our-security-system and /en/company/compliance
+- id: soc3
+  conforms: true
+  evidence: AICPA SOC 3 certification badge on /en/company/our-security-system
+- id: pci-dss
+  conforms: true
+  evidence: PCI DSS Compliant badge on /en/company/our-security-system and /en/membership
+- id: gdpr
+  conforms: true
+  evidence: GDPR compliance badge and "legally bound to the highest global standards for data privacy, including GDPR"
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: PGP-signed /.well-known/security.txt with Contact, Policy, Canonical, Expires (well-known/xapo-security.txt)
+- id: gibraltar-fsa-2019-credit-institution
+  conforms: true
+  evidence: Xapo Bank Limited regulated by GFSC as credit institution, Permission No. 23171
+- id: gibraltar-fsa-2019-dlt-provider
+  conforms: true
+  evidence: Xapo VASP Limited regulated by GFSC as DLT Provider, Permission No. 26061
+- id: oauth2
+  conforms: false
+  evidence: no public API or OAuth surface published; /.well-known/openid-configuration and /oauth-authorization-server return 404
+- id: openid-connect
+  conforms: false
+  evidence: no OIDC discovery document on www.xapobank.com

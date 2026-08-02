@@ -1,0 +1,28 @@
+{
+  "repo": "xapo",
+  "feeds": [
+    {
+      "source": "https://www.xapobank.com/feed.xml",
+      "feed_url": "https://www.xapobank.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.xapobank.com/en/help",
+      "feed_url": "https://www.xapobank.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.xapobank.com/en/insider",
+      "feed_url": "https://www.xapobank.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 50,
+  "fetched": "2026-08-01T15:49:00Z"
+}

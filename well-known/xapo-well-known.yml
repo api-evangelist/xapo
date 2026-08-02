@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.xapobank.com/.well-known/
+host: https://www.xapobank.com
+notes: >-
+  Xapo Bank is an app-only private bank with no public developer API; the
+  website host is the only probeable surface. xapo.com 301-redirects to
+  www.xapobank.com. Legacy API hosts (developers.xapo.com, docs.xapo.com,
+  api.xapobank.com) no longer resolve; api.xapo.com returns 404.
+documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: xapo-security.txt
+    note: RFC 9116, PGP-signed; Policy + Contact + Acknowledgments present
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
