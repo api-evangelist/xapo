@@ -13,6 +13,17 @@ description: >-
   developer API or portal; legacy Xapo Bitcoin API SDKs remain on PyPI and
   RubyGems from its pre-bank wallet era.
 url: https://raw.githubusercontent.com/api-evangelist/xapo/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
