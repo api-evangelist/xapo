@@ -2,12 +2,12 @@ generated: '2026-07-21'
 method: searched
 source: https://www.xapobank.com/.well-known/
 host: https://www.xapobank.com
-notes: >-
-  Xapo Bank is an app-only private bank with no public developer API; the
-  website host is the only probeable surface. xapo.com 301-redirects to
-  www.xapobank.com. Legacy API hosts (developers.xapo.com, docs.xapo.com,
-  api.xapobank.com) no longer resolve; api.xapo.com returns 404.
-documents:
+notes: Xapo Bank is an app-only private bank with no public developer API; the website host is the only
+  probeable surface. xapo.com 301-redirects to www.xapobank.com. Legacy API hosts (developers.xapo.com,
+  docs.xapo.com, api.xapobank.com) no longer resolve; api.xapo.com returns 404.
+hosts:
+- host: https://www.xapobank.com
+  documents:
   - path: /.well-known/security.txt
     status: 200
     file: xapo-security.txt
@@ -20,5 +20,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
-  - path: /llms.txt
-    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
